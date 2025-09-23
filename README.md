@@ -106,5 +106,5 @@ This project is licensed under the [MIT License](LICENSE). You are free to use, 
 
 ## 🌟 About Me
 
-Hi, I’m Neha Kudale! I work in IT and have a strong passion for Data Engineering. My goal is to share knowledge, simplify concepts, and make working with data more exciting and fun for everyone!
+Hi, I’m Neha Kudale! I working as Software support engineer and have a strong passion for Data Engineering. My goal is to share knowledge, simplify concepts, and make working with data more exciting and fun for everyone!
 
