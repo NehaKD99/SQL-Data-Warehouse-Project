@@ -7,7 +7,7 @@ This project shows how to build a data warehouse from raw files and turn it into
 ## 🏗️ Data Architecture
 
 The project uses the Medallion Architecture with three layers:
-![Data Architecture](docs/data_architecture.png)
+![Data Architecture](Docs/data_architecture.png)
 
 1. **Bronze Layer**: Stores raw data as-is from the source systems. Data is ingested from CSV Files into SQL Server Database.
 2. **Silver Layer**: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
