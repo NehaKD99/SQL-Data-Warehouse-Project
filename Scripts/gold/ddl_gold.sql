@@ -46,11 +46,11 @@ GO
 -- =============================================================================
 -- Create Dimension: gold.dim_products
 -- =============================================================================
-IF OBJECT_ID('gold.dim_products', 'V') IS NOT NULL
-    DROP VIEW gold.dim_products;
+IF OBJECT_ID('gold.dim_product', 'V') IS NOT NULL
+    DROP VIEW gold.dim_product;
 GO
 
-CREATE VIEW gold.dim_products AS
+CREATE VIEW gold.dim_product AS
 SELECT
     ROW_NUMBER() OVER (ORDER BY pn.prd_start_dt, pn.prd_key) AS product_key, -- Surrogate key
     pn.prd_id       AS product_id,
@@ -88,7 +88,7 @@ SELECT
     sd.sls_quantity AS quantity,
     sd.sls_price    AS price
 FROM silver.crm_sales_details sd
-LEFT JOIN gold.dim_products pr
+LEFT JOIN gold.dim_product pr
     ON sd.sls_prd_key = pr.product_number
 LEFT JOIN gold.dim_customers cu
     ON sd.sls_cust_id = cu.customer_id;
